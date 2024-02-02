@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Manrope&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://tr.rbxcdn.com/b5de28a561a0135cad2559d4612b6ca9/150/150/Image/Png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 8px;
+            display: block;
+            color: aliceblue;
+        }
+
+        input {
+            font-size: 16px;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        input[type="submit"] {
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign up</h2>
+    <form action="register.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
